@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+    
+</body>
+</html>
+<html>
+<head>
+<style>
+  @charset "UTF-8";
+html {
+  background: url(../final/images/BG_splatoon.jpg) no-repeat center fixed;
+  background-size: cover;
+}
+.grid-container  {
+    display: grid;
+    grid-template-areas: 
+      'header header header header header header' 
+      'StoryM1and2 StoryM1and2 StoryM1and2 OctoEx OctoEx OctoEx'
+      'StoryM3 StoryM3 StoryM3 SideO SideO SideO' 
+      'footer footer footer footer footer footer';
+      gap: 20px;
+    padding: 20px;
+    
+
+  }
+
+@font-face {
+  font-family: Foo;
+  src: url(../final/fonts/Foo.otf) format('opentype');
+}
+@font-face {
+  font-family: Gila Bold;
+  src: url(../final/fonts/Gila\ Bold.otf) format('opentype');
+}
+@font-face {
+  font-family: Gila;
+  src: url(../final/fonts/Gila.otf) format('opentype');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  grid-area: header;
+  background-image: url(../final/images/Asset\ 1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline;
+  background-position: right;
+  border-radius: 10px;
+  position: sticky;
+  top: 0;
+  height: 130px;
+  box-sizing: border-box;
+  align-content: center;
+  line-height: 0; 
+
+  a:link {
+    color: rgb(200, 237, 127);
+    background-color: none;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: rgb(200, 237, 127);
+    background-color: none;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: rgb(200, 237, 127);
+    background-color: none;
+    text-decoration: none;
+  }
+  
+  a:active {
+    color: rgb(200, 237, 127);
+    background-color: none;
+    text-decoration: none;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .header {
+    background-image: url(../final/images/Asset\ 1.svg);
+  }}
+h1 {
+  font-family: Foo;
+  font-size: 40pt;
+  color: rgb(200, 237, 127);
+  text-align: right;
+  padding-right: 70px;
+  font-kerning: 20pt;
+}
+
+h2 {
+  font-family: Gila Bold;
+  font-size: 15pt;
+  color: rgb(200, 237, 127);
+  text-align: right;
+  padding-right: 190px;
+  
+}
+
+h3 {
+  font-family: Gila Bold;
+  font-size: 15pt;
+  color: rgb(200, 237, 127);
+  text-align: left;
+ 
+   
+
+
+
+    a:link {
+    color: rgb(200, 237, 127);
+    background-color: none;
+    text-decoration: none;
+   
+  }
+  
+  a:visited {
+    color: rgb(200, 237, 127);
+    background-color: none;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: rgb(255, 255, 255);
+    background-color: none;
+    text-decoration: none;
+  }
+  
+  a:active {
+    color: rgb(200, 237, 127);
+    background-color: none;
+    text-decoration: none;
+  }
+}
+h4 {
+  font-family: Gila Bold;
+  font-size: 15pt;
+  color: rgb(200, 237, 127);
+  text-align: left;
+  padding-left: 10px;
+   a:link {
+    color: rgb(200, 237, 127);
+    background-color: none;
+    text-decoration: none;
+   
+  }
+  
+  a:visited {
+    color: rgb(200, 237, 127);
+    background-color: none;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: rgb(242, 243, 241);
+    background-color: none;
+    text-decoration: none;
+  }
+  
+  a:active {
+    color: rgb(200, 237, 127);
+    background-color: none;
+    text-decoration: none;
+  }
+}
+.footer {
+  grid-area: footer;
+  background-color: rgb(68, 78, 93);
+  border-radius: 30px;
+}
+@media (max-width: 800px) {
+  .grid-container  {
+    grid-template-areas: 
+      'header header header header header header'
+
+      'StoryM1and2 StoryM1and2 StoryM1and2 StoryM1and2 StoryM1and2 StoryM1and2'
+
+      'OctoEx OctoEx OctoEx OctoEx OctoEx OctoEx'
+
+      'StoryM3 StoryM3 StoryM3 StoryM3 StoryM3 StoryM3'
+
+      'SideO SideO SideO SideO SideO SideO' 
+
+      'footer footer footer footer footer footer';
+      gap: 20px;
+    padding: 20px;
+  }
+  
+}
+.StoryM1and2 {
+  grid-area: StoryM1and2;
+background-color: rgb(63, 82, 105);
+border-radius: 30px;
+margin: 30px;
+padding: 30px;
+font-family: Gila;
+font-size: 10pt;
+color: white;
+
+}
+.StoryM1and2 img {
+  width: 250px;
+  float: right;
+  margin: 0px 10px;
+}
+
+.OctoEx {
+  grid-area: OctoEx;
+background-color: rgb(63, 82, 105);
+border-radius: 30px;
+margin: 30px;
+padding: 30px;
+font-family: Gila;
+font-size: 10pt;
+color: white;
+}
+.OctoEx img {
+  width: 250px;
+  float: right;
+  margin: 0px 10px;
+}
+.StoryM3 {
+  grid-area: StoryM3;
+background-color: rgb(63, 82, 105);
+border-radius: 30px;
+margin: 30px;
+padding: 30px;
+font-family: Gila;
+font-size: 10pt;
+color: white;
+}
+.StoryM3 img {
+  width: 210px;
+  float: right;
+  margin: 0px 10px;
+}
+.SideO {
+  grid-area: SideO;
+background-color: rgb(63, 82, 105);
+border-radius: 30px;
+margin: 30px;
+padding: 30px;
+font-family: Gila;
+font-size: 10pt;
+color: white;
+}
+.SideO img {
+  width: 250px;
+  float: right;
+  margin: 0px 10px;
+}
+
+.button1 {background-color: rgb(200, 237, 127);
+  border: none;
+  color: rgb(63, 82, 105);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 10px 0px;
+  cursor: pointer;
+  border-radius: 20px;
+  
+  }
+  .button1:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(63, 82, 105);
+  }
+  .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(200, 237, 127);
+  display: block;
+  transition: 0.3s;
+  font-family: Gila;
+  line-height: normal;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="grid-container">
+  <div class="header">
+    <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="./index.html">Home</a>
+  <a href="./Gameplay.html">Gameplay</a>
+  <a href="../final/Competative.html">Competative</a>
+  <a href="../final/Music.html">Music</a>
+  <a href="../final/Lore.html">Lore</a>
+  <a href="../final/about.html">About</a>
+  </div>
+  <span style="color: rgb(200, 237, 127); vertical-align: middle; float: left; padding: 20px; font-size:30px; cursor:pointer"  onclick="openNav()">&#9776; </span>
+
+  <script>
+  function openNav() {
+   document.getElementById("mySidenav").style.width = "250px";
+}
+
+ function closeNav() {
+   document.getElementById("mySidenav").style.width = "0";
+}
+ </script>
+ 
+<h1><a href="index.html">Splatoon</a></h1>
+    <h2>Fanpage</h2>
+    <button2 onclick="history.back()" style="font-size:40px; color: rgb(200, 237, 127); padding: 20px; background-color: none; text-align: left; vertical-align: middle;"> &#10554;</button2>
+  </div>
+  
+
+  <div class="StoryM1and2" ><h4>Idol Groups</h4> <img src="../final/images/NowOrNever7_GF.jpg" alt="Grand Fest Now or Never 7 performs 3 Wishes">
+   <p>This is the most noteable element of splatoon music. Each game has an idol group. They do the map announcements and even live splatfest performances. Each group has its own unique sound. Splatoon's group is the Squid Sisters a J-Pop group. Splatoon 2 features Off the Hook a Hip-hop duo. Splatoon 3, the most unique by far, has Deep Cut. Each member brings a different culture of music. We have Shiver with traditional japenese music, Frye with Indian/East asian, and Big Man with a brazilian sound. </p> </div>
+
+  <div class="OctoEx" ><h4>In-Game Bands</h4> <img src="../final/images/YokoandTGB.png" alt="YandTGB Album Cover">
+   <p>Splatoon has in game bands with albums and member descriptions in all. They display a variety of genres heard in different areas of the game. Certant bands play over multiplayer battles, while others are in the singleplayer modes. The one featured in this picture is Yoko and the Gold Bazookas. They play ska-style music.</p>
+  </div>
+  <div class="StoryM3" ><h4>Physical Media</h4> <img src="../final/images/AlbumSO.jpg" alt="Side Order Album">
+   <p>The downside of being a Splatoon fan is that most merchandise is locked to japan. There have been releases of all the soundtracks though! Its just hard to get and most likely written in japenese...
+    <br>
+    <br>
+    Most of the music from Splatoon 2 and 3 is currently available on the Nintendo Music app.
+   </p>
+  </div>
+  <div class="SideO" > <h4>Live Performance</h4> 
+    <iframe width="440" height="200" src="https://www.youtube.com/embed/XCMRqJjGsQQ?si=_sum5vcBlrgvwJsI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+ 
+  
+  <div class="footer">
+  <h4><a href="about.html">About This Page</a></h4>
+  </div>
+</div>
+
+</body>
+</html>

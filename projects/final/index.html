@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+    
+</body>
+</html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+
+
+<div class="grid-container">
+  <div class="header">
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="./index.html">Home</a>
+  <a href="./Gameplay.html">Gameplay</a>
+  <a href="../final/Competative.html">Competative</a>
+  <a href="../final/Music.html">Music</a>
+  <a href="../final/Lore.html">Lore</a>
+  <a href="../final/about.html">About</a>
+  </div>
+  <span style="color: rgb(200, 237, 127); vertical-align: middle; float: left; padding: 20px; font-size:30px; cursor:pointer"  onclick="openNav()">&#9776; </span>
+
+  <script>
+  function openNav() {
+   document.getElementById("mySidenav").style.width = "250px";
+}
+
+ function closeNav() {
+   document.getElementById("mySidenav").style.width = "0";
+}
+ </script>
+
+ <h1> <a href="index.html">Splatoon</a></h1> <br><h2>Fanpage</h2>
+    
+</div>
+  
+<div class="left" ><h3><a href="blanksite.html" target='_blank'>Fanart</a></h3> 
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="../final/images/Untitled18_20230918215926.png" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="../final/images/Untitled41_20240305165956.png" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="../final/images/Untitled43_20240323034452.png" style="object-fit: cover; width:100%">
+  <div class="text"></div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+</script>
+
+ </div>   
+
+  <div class="game" ><h3><a href="Gameplay.html">Gameplay</a></h3></div>  
+
+  <div class="comp" ><h3><a href="Competative.html">Competative</a></h3></div>
+  
+  <div class="music" ><h3><a href="Music.html">Music</a></h3></div>
+
+  <div class="lore" ><h3><a href="Lore.html">Lore</a></h3></div>
+
+  <div class="footer">
+  <h4><a href="about.html">About This Page</a></h4>
+  </div>
+</div>
+
+</body>
+</html>
